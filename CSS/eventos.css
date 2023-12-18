@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(209, 208, 208);
+    font-family: cursive;
+}
+
+.header-padre {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.85) 100%), url(https://storage.googleapis.com/diariodemocracia/cache/f1/e7/7598b2f87bf211eaa6e842010a8e0003.jpg);
+    padding-bottom: 320px;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-padre header {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo {
+    width: 70px;
+    height: 50px;
+    border: 2px solid #0bcc04;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-logo p {
+    color: white;
+    font-size: 15px;
+}
+
+.option {
+    width: 60%;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid transparent;
+    border-bottom-color: #0bcc04;
+}
+.option1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mark {
+    color: #0bcc04;
+}
+.option a {
+    padding: 20px 20px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+.option a:hover {
+    border-bottom-color: #0bcc04;
+}
+
+.option span{
+    font-size: 25px;
+    color: white;
+}
+
+.header-titulo {
+    padding-top: 120px;
+}
+.header-titulo-hijo {
+    font-size: 50px;
+    color: #fff;
+}
+
+/* Aca termina el header */
+
+.contenedor1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contenedor2 {
+    background-color: white;
+    width: 900px;
+    height: auto;
+    box-shadow: 0px 0px 10px 0px black;
+    position: relative;
+    top: -50px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.contenedor3 {
+    margin: 50px 30px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor3 h3 {
+    margin-bottom: 30px;
+}
+.contenedor3 p {
+    margin-bottom: 30px;
+}
+
+.img-p {
+    width: 500px;
+    padding: 20px 15px;
+    float: right;
+}
+
+.contenedor3 a {
+    text-decoration: none;
+    color: black;
+}
+.contenedor3 a:hover {
+    color: #0bcc04;
+}
+
+.pul {
+    font-size: 14px;
+}
+
+.linea {
+    width: 100%;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+.linea hr {
+    width: 50%;
+}
+
+/* Aca termina el contenido */
+
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(68, 67, 67);
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.footer-texto1 {
+    margin: 1%;
+    left: 0;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    gap: 10px;
+}
+.footer-texto1 a {
+    text-decoration: none;
+    color: white;
+}
+.footer-texto1 a:hover {
+    color: #38b54a;
+}
+.footer-img {
+    display: flex;
+    align-items: center;
+}
+.footer-img img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Aca arranca el @media */
+
+@media (max-width: 1500px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1300px) {
+    .option {
+        width: 70%;
+    }
+    .header-titulo-hijo {
+        font-size: 40px;
+    }
+    footer {
+        height: 130px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .option {
+        width: 80%;
+    }
+    .option span {
+        font-size: 22px;
+    }
+    .header-titulo-hijo {
+        font-size: 35px;
+    }
+    .contenedor2 {
+        width: 800px;
+    }
+}
+
+@media (max-width: 900px) {
+    .option {
+        flex-direction: column;
+    }
+    .header-titulo-hijo {
+        font-size: 30px;
+    }
+    .contenedor2 {
+        width: 600px;
+    }
+    .footer-texto1 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    .header-logo {
+        width: 60px;
+        height: 40px;
+    }
+    .header-logo p {
+        font-size: 12px;
+    }
+    .option span {
+        font-size: 20px;
+    }
+    .header-titulo-hijo {
+        font-size: 25px;
+    }
+    .contenedor2 {
+        width: 500px;
+        display: flex;
+    }
+    .contenedor3 h3 {
+        font-size: 19px;
+    }
+    .contenedor3 p {
+        font-size: 16px;
+    }
+    .img-p {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer-texto1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-texto1 b {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .contenedor2 {
+        width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-titulo-hijo {
+        font-size: 20px;
+    }
+    .option span {
+        font-size: 15px;
+    }
+}
